@@ -1,8 +1,8 @@
 syntax on
 
 set noerrorbells
-set tabstop=4 softtabstop=4
-set shiftwidth=4
+set tabstop=2 softtabstop=2
+set shiftwidth=2
 set expandtab
 set smartindent
 set nu
@@ -16,6 +16,9 @@ set incsearch
 
 
 call plug#begin('~/.vim/plugged')
+Plug 'alvan/vim-closetag'
+Plug 'preservim/nerdcommenter'
+Plug 'bagrat/vim-buffet'
 Plug 'preservim/nerdtree'
 Plug 'morhetz/gruvbox'
 Plug 'jremmen/vim-ripgrep'
@@ -75,4 +78,13 @@ inoremap <silent><expr> <Tab>
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
 
-
+nmap <leader>1 <Plug>BuffetSwitch(1)
+nmap <leader>2 <Plug>BuffetSwitch(2)
+nmap <leader>3 <Plug>BuffetSwitch(3)
+nmap <leader>4 <Plug>BuffetSwitch(4)
+nmap <leader>5 <Plug>BuffetSwitch(5)
+nmap <leader>6 <Plug>BuffetSwitch(6)
+nmap <leader>7 <Plug>BuffetSwitch(7)
+nmap <leader>8 <Plug>BuffetSwitch(8)
+nmap <leader>9 <Plug>BuffetSwitch(9)
+nmap <leader>0 <Plug>BuffetSwitch(10)
